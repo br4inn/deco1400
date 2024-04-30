@@ -1,0 +1,118 @@
+header {
+    background-color: #ffffff;  
+    color: #000000;  
+    padding: 10px 0;  
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;  
+}
+
+.home-link {
+    float: left; /* make HOME on left */
+    margin-right: 20px;  
+}
+
+nav ul li a {
+    color: #000000;  
+    text-decoration: none;
+    padding: 10px 20px; 
+}
+
+nav ul li a:hover {
+    background-color: #dddddd;
+}
+
+ 
+.homepage {
+    background-image: url('file:///Y:/deco1400/images/title_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mr2_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.mr2_title h2 {
+    font-size: 9em;  
+    text-align: center;
+}
+
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: red;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+ 
+.aw11 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.sw20 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+
+.mrs {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.firstgenbackground {
+    background-image: url('file:///Y:/deco1400/images/grey_background.jpg');
+    background-size: cover;
+    background-position: center calc(50vh - 550px); /* Adjusted background position */
+    background-repeat: no-repeat;
+    width: 100%; /* span the width of the page */
+}
+
+
+.image-container2 {
+    position: relative;
+}
+
+.image-container2 img {
+    transition: transform 0.3s ease;
+}
+
+
+ 
+.firstgen {
+    position: middle;
+    bottom: 0;
+    right: 0;
+    width: 100%; /* span the width of the page */
+}
