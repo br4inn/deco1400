@@ -75,20 +75,25 @@ nav ul li a:hover {
  
 .aw11 {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 100%;
+    right: 40%;
+    transform: translate(-110%, -130%);
+    width: 50%;
 }
 
 .sw20 {
     position: absolute;
-    top: 0%;
-    left: 50%;
+    bottom: 100%;
+    right: 40%;
+    transform: translate(40%, -130%);
+    width: 50%;
 }
 
 .mrs {
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 50%;
 }
 
 
@@ -118,8 +123,6 @@ nav ul li a:hover {
     right: 0;
     width: 100%; /* span the width of the page */
 }
-
-
 
 .first_generation_title {
     position: absolute;
@@ -180,4 +183,38 @@ nav ul li a:hover {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 2.5rem;  
     text-align: left;
+}
+
+.secondgenbackground {
+    background-image: url('file:///Y:/deco1400/images/grey_background.jpg');
+    background-size: 100%;
+    background-position: center calc(50vh - 610px); 
+    background-repeat: no-repeat;
+    width: 100%; /* span the width of the page */
+}
+
+ 
+.image-container3 {
+    position: relative;
+}
+
+.secondgen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;  
+    height: auto;  
+}
+
+ 
+.image-container4 {
+    position: relative;
+}
+
+.secondgen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%; /* Adjust the width as needed */
+    height: 50%; 
 }
