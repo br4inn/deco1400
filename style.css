@@ -22,6 +22,7 @@ nav ul li {
 }
 
 nav ul li a {
+    font-family: "Open Sans", sans-serif;
     color: #000000;  
     text-decoration: none;
     padding: 10px 20px; 
@@ -47,6 +48,7 @@ nav ul li a:hover {
 }
 
 .mr2_title h2 {
+    font-family: "Roboto", sans-serif;  
     font-size: 9em;  
     text-align: center;
 }
@@ -81,7 +83,6 @@ nav ul li a:hover {
     position: absolute;
     top: 0%;
     left: 50%;
-    transform: translate(50%, 50%);
 }
 
 .mrs {
@@ -93,26 +94,90 @@ nav ul li a:hover {
 
 .firstgenbackground {
     background-image: url('file:///Y:/deco1400/images/grey_background.jpg');
-    background-size: cover;
-    background-position: center calc(50vh - 550px); /* Adjusted background position */
+    background-size: 100%;
+    background-position: center calc(50vh - 450px); /* Adjusted background position */
     background-repeat: no-repeat;
     width: 100%; /* span the width of the page */
 }
 
+.firstgenbackgroundwhite {
+    background-color: white; /* White background color */
+    width: 100%; /* span the width of the page */
+    height: 50vh; /* Adjust height as needed */
+    position: absolute;
+    top: calc(50vh + 50px); /* Position below the grey background */
+}
 
 .image-container2 {
     position: relative;
 }
-
-.image-container2 img {
-    transition: transform 0.3s ease;
-}
-
-
  
 .firstgen {
     position: middle;
     bottom: 0;
     right: 0;
     width: 100%; /* span the width of the page */
+}
+
+
+
+.first_generation_title {
+    position: absolute;
+    top: 15%;
+    left: 76.3%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Make sure text is above the image */
+}
+
+.first_generation_title h2 {
+    font-family: "Trebuchet MS", sans-serif; 
+    font-size: 6em;  
+    text-align: left;
+}
+
+.bodytext {
+    width: 95%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Make sure text is above the image */
+}
+
+.bodytext h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8;  
+    text-align: left;
+}
+
+.aw11 {
+    
+    position: absolute;
+    top: 27.5%;
+    left: 50%;
+     
+    z-index: 1; /* Make sure text is above the image */
+}
+
+
+.aw11 h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.5rem;  
+    text-align: left;
+}
+
+.changes {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     
+    z-index: 1; /* Make sure text is above the image */
+}
+
+
+.changes h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.5rem;  
+    text-align: left;
 }
