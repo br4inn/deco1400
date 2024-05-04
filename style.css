@@ -34,7 +34,7 @@ nav ul li a:hover {
 
  
 .homepage {
-    background-image: url('file:///Y:/deco1400/images/title_background.jpg');
+    background-image: url('./images/title_background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,34 +97,29 @@ nav ul li a:hover {
 }
 
 
-.firstgenbackground {
-    background-image: url('file:///Y:/deco1400/images/grey_background.jpg');
-    background-size: 100%;
-    background-position: center calc(50vh - 450px); /* Adjusted background position */
-    background-repeat: no-repeat;
-    width: 100%; /* span the width of the page */
-}
+ 
 
-.firstgenbackgroundwhite {
-    background-color: white; /* White background color */
-    width: 100%; /* span the width of the page */
-    height: 50vh; /* Adjust height as needed */
-    position: absolute;
-    top: calc(50vh + 50px); /* Position below the grey background */
-}
+/*.firstgenbackgroundwhite {
+ /   background-color: white; /* White background color */
+ /*   width: 100%; /* span the width of the page */
+ /* height: 50vh; /* Adjust height as needed */
+ /*   position: absolute;
+ ?*   top: calc(50vh + 50px); /* Position below the grey background */
+/*}
+*/
 
-.image-container2 {
-    position: relative;
+.fart{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
  
 .firstgen {
-    position: middle;
-    bottom: 0;
-    right: 0;
+ 
     width: 100%; /* span the width of the page */
 }
 
-.first_generation_title {
+#first_generation_title {
     position: absolute;
     top: 15%;
     left: 76.3%;
@@ -132,31 +127,38 @@ nav ul li a:hover {
     z-index: 1; /* Make sure text is above the image */
 }
 
-.first_generation_title h2 {
+#first_generation_title h2 {
     font-family: "Trebuchet MS", sans-serif; 
     font-size: 6em;  
     text-align: left;
 }
 
 .bodytext {
-    width: 95%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    background-image:  url("./images/grey_background.jpg");
     z-index: 1; /* Make sure text is above the image */
 }
 
 .bodytext h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.8;  
-    text-align: left;
+    text-align: center;
 }
+
+.column {
+    flex: 33%
+  }
+  
+  /* Clear floats after the columns */
+  .row {
+    display: flex;
+  }
 
 .aw11 {
     
     position: absolute;
-    top: 27.5%;
+    margin-top: 28%;
     left: 50%;
      
     z-index: 1; /* Make sure text is above the image */
@@ -171,9 +173,9 @@ nav ul li a:hover {
 
 .changes {
    
-    position: absolute;
+    /*position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;*/
      
     z-index: 1; /* Make sure text is above the image */
 }
@@ -186,7 +188,7 @@ nav ul li a:hover {
 }
 
 .secondgenbackground {
-    background-image: url('file:///Y:/deco1400/images/grey_background.jpg');
+    background-image: url('./images/grey_background.jpg');
     background-size: 100%;
     background-position: center calc(50vh - 610px); 
     background-repeat: no-repeat;
