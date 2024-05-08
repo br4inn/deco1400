@@ -105,7 +105,9 @@ nav ul li a:hover {
 
 .white-text {
     color: white;
+   
 }
+
 
 .centre{
     display:flex;
@@ -125,7 +127,6 @@ nav ul li a:hover {
     top: 15%;
     left: 76.3%;
     transform: translate(-50%, -50%);
-    z-index: 1;  
 }
 
 #first_generation_title h2 {

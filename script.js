@@ -1,4 +1,7 @@
  
+ 
+// need 4 unique things
+
 
 // Found on w3schools
 let slideIndex = 0;
