@@ -53,9 +53,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.white-text {
-    color: white;
-}
 
 .red-text {
     color: red;
@@ -106,6 +103,10 @@ nav ul li a:hover {
 /*}
 */
 
+.white-text {
+    color: white;
+}
+
 .centre{
     display:flex;
     align-items: center;
@@ -148,13 +149,13 @@ nav ul li a:hover {
 
 .column {
     flex: 33%
-  }
+}
   
  
-  .row {
+.row {
     display: flex;
     
-  }
+}
 
 .aw11 {
     
@@ -202,27 +203,17 @@ nav ul li a:hover {
     }
 
 
-.flex-container {
-    display: flex;
-}
-    
-
-.image-container3 {
-   flex: -1;  
-}
-    
 .bodytextsecond {
     flex: 1; 
     margin-left: 380px;  
 }
  
-
-
+ 
 .secondgen {
     position: absolute;
     top: 10;
     left: 0;
-    width: 29%;  
+    width: 50%;  
     height: auto;  
 }
 
@@ -252,7 +243,7 @@ nav ul li a:hover {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
   
   /* Caption text */
   .text {
