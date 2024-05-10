@@ -43,9 +43,7 @@ const autoScroll = setInterval(() => {
 }, 7000); // Changed interval to 7000 milliseconds (7 seconds)
  
 
-
-// Based on "build a popup with javascript by Florin pop"
-function showPopup(title, description, imageSrc) {
+function showPopup(title, description, image) {
   const popup = document.getElementById("popup");
   const popupContent = document.querySelector(".popup-content");
   const popupTitle = popupContent.querySelector(".popup-title");
@@ -54,7 +52,7 @@ function showPopup(title, description, imageSrc) {
 
   popupTitle.textContent = title;
   popupDescription.textContent = description;
-  popupImage.src = imageSrc;
+  popupImage.src = image; // Set the image source
 
   popup.style.display = "block";
 }
@@ -63,4 +61,4 @@ function hidePopup() {
   const popup = document.getElementById("popup");
   popup.style.display = "none";
 }
- 
+

@@ -360,7 +360,7 @@ html {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 7;
+    margin-top: 7px;
 }
 
 
@@ -403,7 +403,7 @@ html {
   }
   
 
-  .popup {
+ .popup {
     display: none;
     position: fixed;
     top: 0;
@@ -412,43 +412,42 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     z-index: 9999;
-  }
-  
-  .popup-content {
+}
+
+.popup-content {
     background-color: #fefefe;
     margin: 20% auto;
     padding: 20px;
     border-radius: 5px;
     max-width: 80%;
     text-align: center;
-  }
-  
-  .close {
+}
+
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
+}
 
-  .popup-content h2 {
+.popup-content h2 {
     font-family: "Roboto", sans-serif; /* Change font family */
     font-size: 40px; /* Change font size */
     /* Add any other styling for h2 elements */
-  }
-  
-  .popup-content p {
+}
+
+.popup-content p {
     font-family: "Open Sans", sans-serif; /* Change font family */
     font-size: 30px; /* Change font size */
     /* Add any other styling for p elements */
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-
+}
   .column-thirdgen img {
     cursor: pointer;
   
