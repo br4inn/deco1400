@@ -239,6 +239,8 @@ nav ul li a:hover {
 
 
  
+
+/* from w3 schools */
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -247,7 +249,7 @@ nav ul li a:hover {
 }
   
   /* Caption text */
-  .text {
+.text {
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
