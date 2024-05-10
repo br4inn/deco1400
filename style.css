@@ -33,62 +33,92 @@ nav ul li a:hover {
 }
 
  
+
+html {
+    height: 100%; /* get rid of whitespace at bottom*/
+}
+ 
 .homepage {
     background-image: url('./images/title_background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+ 
 }
 
 .mr2_title {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+ 
+ 
 }
 
 .mr2_title h2 {
     font-family: "Roboto", sans-serif;  
-    font-size: 9em;  
-    text-align: center;
+    font-size: 10em;  
+    text-align: left;
+    line-height: 0.95;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
 }
 
 
 .red-text {
     color: red;
+   
 }
 
 .image-container {
-    position: relative;
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    display: flex;
+    justify-content: space-around;  
 }
+
 
 .image-container img {
     transition: transform 0.3s ease;
+    
 }
 
 .image-container img:hover {
     transform: scale(1.1); /* Scale up the image on hover */
 }
+
  
+
+.image-container-sw20 img {
+    transition: transform 0.3s ease;
+}
+
+.image-container-sw20 img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+
 .aw11 {
-    position: relative;
-  
+    position: absolute;
+    bottom: 0;
     left: 0;
-    
-    width: 50%;
+    width: 34%;  
+    left: 5%;
 }
 
 .sw20 {
-    position: relative;
-   
-    
-    width: 50%;
+    position: absolute;
+    bottom: 30%;  
+    left: 33%;  
+    width: 27%;  
 }
 
 .mrs {
-    position: relative;
-    width: 50%;
-   
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 52%;
+    width: 30%; 
 }
 
 
@@ -158,21 +188,7 @@ nav ul li a:hover {
     
 }
 
-.aw11 {
-    
-    position: absolute;
-    margin-top: 28%;
-    left: 50%;
-     
-    z-index: 1;  
-}
-
-
-.aw11 h2 {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 2.5rem;  
-    text-align: left;
-}
+ 
 
  
 
