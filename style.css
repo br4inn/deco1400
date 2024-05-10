@@ -49,15 +49,14 @@ html {
 .mr2_title {
     display: flex;
     justify-content: center;
-    
-    bottom: 90%;
-    position: relative;
+    align-items: center;
+ 
  
 }
 
 .mr2_title h2 {
     font-family: "Roboto", sans-serif;  
-    font-size: 8vw;  
+    font-size: 10em;  
     text-align: left;
     line-height: 0.95;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
@@ -69,7 +68,15 @@ html {
    
 }
 
- 
+.image-container {
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    display: flex;
+    justify-content: space-around;  
+}
+
 
 .image-container img {
     transition: transform 0.3s ease;
@@ -95,23 +102,23 @@ html {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 30%;  
-    left: 3%;
+    width: 34%;  
+    left: 5%;
 }
 
 .sw20 {
     position: absolute;
-    bottom: 20%;  
+    bottom: 30%;  
     left: 33%;  
-    width: 24%;  
+    width: 27%;  
 }
 
 .mrs {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 55%;
-    width: 26%; 
+    left: 52%;
+    width: 30%; 
 }
 
 
@@ -141,27 +148,36 @@ html {
 }
  
 .firstgen {
- 
-    width: 100%; /* span the width of the page */
+    top: 50%;
+    width: 100vw;  
+    height: auto;  
+    display: block; 
+    margin: 0; 
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 #first_generation_title {
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 76.3%;
     transform: translate(-50%, -50%);
 }
 
 #first_generation_title h2 {
     font-family: "Trebuchet MS", sans-serif; 
-    font-size: 6em;  
+    font-size: 6.5em;  
     text-align: left;
+  
 }
 
 .bodytext {
     text-align: center;
     width: 100%;
-    background-image:  url("./images/grey_background.jpg");
+    background-color:#eae6e6ae;
+    margin: 0;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .bodytext h2 {
@@ -170,18 +186,42 @@ html {
     text-align: center;
     
 }
+.aw11-title {
+    font-size: 3em;  
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+  
+    text-align: center;
+}
+
+.aw11-paragraph {
+  
+    font-family: "Trebuchet MS", sans-serif; 
+    font-size: 1.4em;  
+ 
+}
 
 .column {
-    flex: 33%
-}
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color:  #f5f5f5;
   
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    font-family: "Trebuchet MS", sans-serif; 
+    font-size: 1.4em;  
  
+}
+.column:hover {
+    transform: scale(1.05); /* Increase the scale on hover */
+}
 .row {
     display: flex;
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
- 
 
  
 
@@ -246,68 +286,183 @@ html {
     left: 20%;
 }
 
-
- 
-
-/* from w3 schools */
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
+/* Inspiration taken from Jemima Abu, webdesign.tuts */
+.slider-wrapper {
+    margin: 0; /* Adjusted margin to remove whitespace */
     position: relative;
-    margin: auto;
+    overflow: hidden;
+    padding: 0;
 }
   
-  /* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+.slides-container {
+    height: calc(100vh - 2rem);
     width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Changed from scroll to hidden */
+    scroll-behavior: smooth;
+}
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+  }
+  
+ 
+  
+  /* WebKit */
+  .slides-container::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: center top; /* Adjusts the positioning to crop more from the top */
+}
+.slide-indicators {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .slide-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #fffefe; /* Default color of the indicators */
+    margin: 0 5px; /* Adjust the spacing between indicators */
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .active-slide {
+    background-color: #4d4c4c; /* Color of the active indicator */
+  }
+
+
+
+    
+
+.column-thirdgen {
+    position: relative;
+    flex: 33%
+}
+  
+.row-thirdgen {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 7;
+}
+
+
+
+
+.changes h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.5rem;  
+    text-align: left;
+}
+
+ 
+.image-container4 {
+    position: relative;
+    
+}
+
+
+
+.column-thirdgen img {
+    max-width: 100%;   
+    height: auto;  
+    display: block;  
+    margin: 0 auto;  
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%; /* Position the text at the vertical center of the container */
+    left: 50%; /* Position the text at the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+   
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make the text bold */
+    font-size: 2.3vw;
+    font-family: "Comic Sans", sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
+  }
+  
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
     text-align: center;
   }
-  * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  .popup-content h2 {
+    font-family: "Roboto", sans-serif; /* Change font family */
+    font-size: 40px; /* Change font size */
+    /* Add any other styling for h2 elements */
+  }
+  
+  .popup-content p {
+    font-family: "Open Sans", sans-serif; /* Change font family */
+    font-size: 30px; /* Change font size */
+    /* Add any other styling for p elements */
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .column-thirdgen img {
+    cursor: pointer;
+  
+    
+  }
+
+  .column-thirdgen img {
+    max-width: 100%;   
+    
+    transition: opacity 0.3s ease;  
+   
+    
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
+.column-thirdgen img:hover {
+    opacity: 0.8; 
 }

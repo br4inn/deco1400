@@ -1,25 +1,66 @@
- 
- 
-// need 4 unique things
+// Inspiration taken from Jemima Abu, webdesign.tuts
+const slidesContainer = document.getElementById("slides-container");
+const slideIndicatorsContainer = document.getElementById("slide-indicators");
+const slides = document.querySelectorAll(".slide");
+let currentSlideIndex = 0;
 
-
-// Found on w3schools
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+// Function to update the active slide indicator
+function updateSlideIndicator(index) {
+  const indicators = document.querySelectorAll(".slide-indicator");
+  indicators.forEach((indicator, i) => {
+    if (i === index) {
+      indicator.classList.add("active-slide");
+    } else {
+      indicator.classList.remove("active-slide");
+    }
+  });
 }
+
+// Initialize slide indicators
+slides.forEach((slide, index) => {
+  const indicator = document.createElement("span");
+  indicator.classList.add("slide-indicator");
+  indicator.addEventListener("click", () => {
+    currentSlideIndex = index;
+    updateSlideIndicator(currentSlideIndex);
+    slidesContainer.scrollLeft = slides[currentSlideIndex].offsetLeft;
+  });
+  slideIndicatorsContainer.appendChild(indicator);
+});
+
+// Update active slide indicator initially
+updateSlideIndicator(currentSlideIndex);
+
+// Automatically scroll to the next slide every 7 seconds
+const autoScroll = setInterval(() => {
+  slidesContainer.scrollLeft += slides[currentSlideIndex].offsetWidth;
+  currentSlideIndex++;
+  if (currentSlideIndex >= slides.length) {
+    currentSlideIndex = 0; // Reset to the first image
+    slidesContainer.scrollLeft = 0; // Scroll back to the first image
+  }
+  updateSlideIndicator(currentSlideIndex);
+}, 7000); // Changed interval to 7000 milliseconds (7 seconds)
+ 
+
+
+// Based on "build a popup with javascript by Florin pop"
+function showPopup(title, description, imageSrc) {
+  const popup = document.getElementById("popup");
+  const popupContent = document.querySelector(".popup-content");
+  const popupTitle = popupContent.querySelector(".popup-title");
+  const popupDescription = popupContent.querySelector(".popup-description");
+  const popupImage = popupContent.querySelector(".popup-image");
+
+  popupTitle.textContent = title;
+  popupDescription.textContent = description;
+  popupImage.src = imageSrc;
+
+  popup.style.display = "block";
+}
+
+function hidePopup() {
+  const popup = document.getElementById("popup");
+  popup.style.display = "none";
+}
+ 

@@ -1,60 +1,71 @@
-<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <title>The MR2 - MRS</title>
-    <link rel="stylesheet" href="style.css">  
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>The MR2 - MRS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
+  <header>
+    <nav>  
+        <ul> 
+            <li class="home-link"><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="origins.html">ORIGINS</a></li>
+            <li><a href="first_generation.html">1ST GEN</a></li>
+            <li><a href="second_generation.html">2ND GEN</a></li>
+            <li><a href="third_generation.html">3RD GEN</a></li>
+            <li><a href="motorsport.html">MOTORSPORT</a></li>
+        </ul>
+    </nav>
+</header>
+  <section class="slider-wrapper">
+  
+    <ul class="slides-container" id="slides-container">
+      <li class="slide">
+        <img src="images/1.jpg" alt="Image 1">
+      </li>
+      <li class="slide">
+        <img src="images/mrs2.jpg" alt="Image 2">
+      </li>
+      <li class="slide">
+        <img src="images/a.jpg" alt="Image 3">
+      </li>
+    
+   
+    </ul>
+    <div class="slide-indicators" id="slide-indicators"></div>
+  </section>
 
-<body>  
-     
-    <header>
-        <nav>  
-            <ul> 
-                <li class="home-link"><a href="index.html"><strong>HOME</strong></a></li>
-                <li><a href="origins.html">ORIGINS</a></li>
-                <li><a href="first_generation.html">1ST GEN</a></li>
-                <li><a href="second_generation.html">2ND GEN</a></li>
-                <li><a href="third_generation.html">3RD GEN</a></li>
-                <li><a href="motorsport.html">MOTORSPORT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-       
-<div class="slideshow-container">
+  <div class="row-thirdgen">
+    <div class="column-thirdgen">
+      <img src="./images/2000_Toyota_MR2_Spyder_right_front_profile.jpg" onclick="showPopup('MRS', 'The Toyota MR2, particularly the MR2 Spyder, often affectionately referred to as the MR-S in some markets, stands as a testament to Toyotas prowess in creating compact, mid-engine sports cars that deliver thrilling driving experiences. First introduced in 1984, the MR2 evolved through multiple generations, each refining its design and performance characteristics. The MR-S, short for Midship Runabout - Sports, represents a departure from the conventional sports car layout, featuring a mid-engine configuration that enhances its balance, agility, and handling prowess. Its compact dimensions, lightweight construction, and responsive steering make it an ideal candidate for spirited driving on twisty backroads or even on the racetrack. While the MR2 Spyder may not boast the blistering horsepower figures of some high-performance sports cars, its nimble chassis and engaging driving dynamics more than compensate for any perceived power deficit. Its rev-happy engines, coupled with precise manual transmissions or optional automatics, ensure that every gear change is a satisfying experience. Beyond its performance attributes, the MR-S carries the legacy of Toyotas commitment to reliability and practicality. Despite its sporty demeanor, it offers a comfortable cabin, well-appointed features, and Toyotas renowned reputation for durability and longevity. For enthusiasts seeking an affordable, driver-focused sports car that delivers pure driving pleasure, the Toyota MR2 Spyder remains a compelling choice that continues to captivate automotive enthusiasts around the world.', './images/2000_Toyota_MR2_Spyder_right_front_profile.jpg')">
+      <div class="overlay-text">MRS</div>
+    </div>
+    <div class="column-thirdgen">
+      <img src="./images/zatago.jpg" onclick="showPopup('VM180 Zagato',  'The Toyota MR2 VM180 Zagato is a unique variant of the renowned MR2, designed in collaboration with the Italian automotive design house, Zagato. This limited-edition model represents a fusion of Japanese engineering prowess with Italian design flair, resulting in a striking and exclusive sports car. Featuring bespoke styling elements, the VM180 Zagato distinguishes itself from the standard MR2 with its distinctive bodywork, characterized by sculpted lines, aerodynamic enhancements, and a sense of bespoke craftsmanship. The collaboration with Zagato brings a touch of elegance and sophistication to the MR2 platform, elevating its visual appeal and making it a collectors item for enthusiasts. Underneath its captivating exterior, the VM180 Zagato retains the MR2s mid-engine layout, ensuring balanced performance and agile handling characteristics. Powered by a spirited engine, it delivers exhilarating acceleration and precise cornering abilities, making it a joy to drive on both road and track. Inside the cabin, the VM180 Zagato offers a blend of sportiness and luxury, with premium materials, supportive seats, and modern amenities. The cockpit is designed to envelop the driver, providing an immersive driving experience that combines comfort with performance. With its limited production numbers and unique design, the Toyota MR2 VM180 Zagato stands as a testament to the creativity and collaboration between two automotive giants, offering discerning enthusiasts a rare opportunity to own a piece of automotive history.')">
+      <div class="overlay-text">Zagato</div>
+    </div>
+    
+    <div class="column-thirdgen">
+      <img src="./images/00510000131000980454.jpg" onclick="showPopup('V-Edition', 'The Toyota MR2 V-Edition is a special variant of the iconic MR2, distinguished by its exclusive features and enhanced performance. As part of the MR2 lineup, the V-Edition represents the pinnacle of the model range, offering enthusiasts a blend of style, performance, and exclusivity. With its upgraded features and bespoke styling elements, the V-Edition sets itself apart from the standard MR2 models, elevating the driving experience to new heights. Featuring a potent engine and tuned suspension, the V-Edition delivers exhilarating performance on both the road and the track. Its sporty demeanor is complemented by a refined interior, featuring premium materials, modern amenities, and a driver-focused cockpit. The V-Edition embodies the spirit of Toyotas commitment to engineering excellence and driving pleasure, making it a coveted choice for enthusiasts seeking a thrilling and rewarding driving experience.')">
+      <div class="overlay-text">V-Edition</div>
+    </div>
+    
+    <div class="column-thirdgen">
+      <img src="./images/tf300.jpg" onclick="showPopup('TF300',  'The Toyota MR2 TF300 is a high-performance variant of the MR2 lineup, engineered to deliver an exhilarating driving experience. As the pinnacle of MR2 performance, the TF300 boasts a range of enhancements designed to push the boundaries of sporty driving. Under the hood lies a tuned engine, capable of delivering impressive power and torque figures, ensuring rapid acceleration and thrilling performance on both the road and the track. Its aerodynamic design and advanced chassis dynamics contribute to superior handling and agility, allowing drivers to confidently tackle corners and straightaways with precision and control. Inside the cabin, the TF300 offers a driver-focused environment, featuring sporty seats, ergonomic controls, and advanced technology to enhance the driving experience. With its combination of performance, style, and refinement, the MR2 TF300 represents the ultimate expression of Toyotas sporting heritage, captivating enthusiasts with its exhilarating performance and timeless appeal.')">
+      <div class="overlay-text">TF300</div>
+    </div>
+    
+  </div>
+  
+  <!-- handle opup-->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="hidePopup()">&times;</span>
+      <h2 id="popup-title"></h2>
+      <p id="popup-info"></p>
+    </div>
+  </div>
+  
 
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="images/1.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="images/mrs2.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="images/mrs3.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-    
-    </div>
-    <br>
-    
-    <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-    </div>
-    
-    
-    
-    </body>
-    </html> 
-     
+  <script src="script.js"></script>
 </body>
 </html>
