@@ -49,14 +49,15 @@ html {
 .mr2_title {
     display: flex;
     justify-content: center;
-    align-items: center;
- 
+    
+    bottom: 90%;
+    position: relative;
  
 }
 
 .mr2_title h2 {
     font-family: "Roboto", sans-serif;  
-    font-size: 10em;  
+    font-size: 8vw;  
     text-align: left;
     line-height: 0.95;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
@@ -68,15 +69,7 @@ html {
    
 }
 
-.image-container {
-    position: absolute;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-    display: flex;
-    justify-content: space-around;  
-}
-
+ 
 
 .image-container img {
     transition: transform 0.3s ease;
@@ -102,23 +95,23 @@ html {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 34%;  
-    left: 5%;
+    width: 30%;  
+    left: 3%;
 }
 
 .sw20 {
     position: absolute;
-    bottom: 30%;  
+    bottom: 20%;  
     left: 33%;  
-    width: 27%;  
+    width: 24%;  
 }
 
 .mrs {
     position: absolute;
     bottom: 0;
     right: 0;
-    left: 52%;
-    width: 30%; 
+    left: 55%;
+    width: 26%; 
 }
 
 
