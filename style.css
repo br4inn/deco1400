@@ -2,6 +2,8 @@ header {
     background-color: #ffffff;  
     color: #000000;  
     padding: 10px 0;  
+    z-index: 1;
+    position: relative;
 }
 
 nav ul {
@@ -166,16 +168,16 @@ html {
 
 #first_generation_title {
     position: absolute;
-    top: 30%; /* Keep it in the same vertical position */
-    left: 76.3%; /* Keep it in the same horizontal position */
+    top: 30%; 
+    left: 76.3%; 
     transform: translate(-50%, -50%);
 }
 
 #first_generation_title h2 {
     font-family: "Roboto", sans-serif; 
-    font-size: 6.5vw; /* Adjust font size as needed */
-    text-align: left; /* Keep it aligned to the left */
-    line-height: 1.2; /* Adjust line height as needed */
+    font-size: 6.5vw;  
+    text-align: left; 
+    line-height: 1.2; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
 }
 
@@ -297,7 +299,7 @@ html {
 
 /* Inspiration taken from Jemima Abu, webdesign.tuts */
 .slider-wrapper {
-    margin: 0; /* Adjusted margin to remove whitespace */
+    margin: 0; 
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -310,7 +312,7 @@ html {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Changed from scroll to hidden */
+    overflow: hidden; 
     scroll-behavior: smooth;
 }
   
@@ -335,6 +337,7 @@ html {
     object-fit: cover; /* Ensures the image covers the entire container */
     object-position: center top; /* Adjusts the positioning to crop more from the top */
 }
+
 .slide-indicators {
     position: absolute;
     bottom: 5%;
@@ -398,14 +401,14 @@ html {
   
   .overlay-text {
     position: absolute;
-    top: 50%; /* Position the text at the vertical center of the container */
-    left: 50%; /* Position the text at the horizontal center of the container */
-    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    top: 50%; 
+    left: 50%;  
+    transform: translate(-50%, -50%);  
    
-    color: rgb(255, 255, 255); /* Text color */
-    padding: 10px 20px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Make the text bold */
+    color: rgb(255, 255, 255);  
+    padding: 10px 20px; 
+    border-radius: 5px;  
+    font-weight: bold;  
     font-size: 2.3vw;
     font-family: "Comic Sans", sans-serif; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
@@ -415,21 +418,27 @@ html {
  .popup {
     display: none;
     position: fixed;
-    top: 0;
+    bottom: 35%;
     left: 0;
+    top: 2%;
+    bottom: 2%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     z-index: 9999;
+    overflow-y: scroll;
+    
 }
 
+
 .popup-content {
-    background-color: #fefefe;
-    margin: 20% auto;
+    background-color: #e3e3e3;
+    margin: auto;
     padding: 20px;
     border-radius: 5px;
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
+
 }
 
 .close {
