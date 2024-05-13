@@ -52,9 +52,9 @@ html {
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top */
-    position: relative; /* Position it absolutely */
+    position: relative; 
     top: 0;
-    width: 100%; /* Occupy full width */
+    width: 100%;  
 }
 
 .mr2_title h2 {
@@ -128,25 +128,10 @@ html {
     width: 75%; 
     overflow-x: hidden;
 }
-
-
- 
-
-/*.firstgenbackgroundwhite {
- /   background-color: white; /* White background color */
- /*   width: 100%; /* span the width of the page */
- /* height: 50vh; /* Adjust height as needed */
- /*   position: absolute;
- ?*   top: calc(50vh + 50px); /* Position below the grey background */
-/*}
-*/
-
+  
 .white-text {
     color: white;
- 
-   
 }
-
 
 .centre {
     display:flex;
@@ -181,7 +166,6 @@ html {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
 }
 
-
 .bodytext {
     text-align: center;
     width: 100%;
@@ -197,19 +181,17 @@ html {
     text-align: center;
     
 }
+
 .aw11-title {
     font-size: 3em;  
     margin: 0;
     font-family: "Open Sans", sans-serif;
-  
     text-align: center;
 }
 
 .aw11-paragraph {
-  
     font-family: "Trebuchet MS", sans-serif; 
     font-size: 1.4em;  
- 
 }
 
 .column {
@@ -217,40 +199,33 @@ html {
     padding: 20px;
     margin: 10px;
     background-color:  #f5f5f5;
-  
     border: 1px solid #ddd;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     font-family: "Trebuchet MS", sans-serif; 
     font-size: 1.4em;  
- 
 }
+
 .column:hover {
     transform: scale(1.05); /* Increase the scale on hover */
 }
+
 .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
- 
-
-
 .changes h2 {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 2.5rem;  
     text-align: left;
 }
-
  
 .image-container4 {
     position: relative;
 }
 
-
-
- 
 .column {
     padding: 0 10px;  
 }
@@ -261,14 +236,12 @@ html {
     display: block;  
     margin: 0 auto;  
     
-    }
-
+}
 
 .bodytextsecond {
     flex: 1; 
     margin-left: 380px;  
 }
- 
  
 .secondgen {
     position: absolute;
@@ -278,12 +251,10 @@ html {
     height: auto;  
 }
 
-
 .bodytextsecond {
     text-align: center;
     width: 100%;
     background-image:  url("./images/grey_background.jpg");
-   
 }
 
 .bodytextsecond h2 {
@@ -322,8 +293,6 @@ html {
     flex: 1 0 100%;
   }
   
- 
-  
   /* WebKit */
   .slides-container::-webkit-scrollbar { 
     width: 0;
@@ -350,7 +319,7 @@ html {
     width: 10px;
     height: 10px;
     background-color: #fffefe; /* Default color of the indicators */
-    margin: 0 5px; /* Adjust the spacing between indicators */
+    margin: 0 5px; /* The spacing between indicators */
     border-radius: 50%;
     z-index: 1;
   }
@@ -358,10 +327,6 @@ html {
   .active-slide {
     background-color: #4d4c4c; /* Color of the active indicator */
   }
-
-
-
-    
 
 .column-thirdgen {
     position: relative;
@@ -375,22 +340,16 @@ html {
     margin-top: 7px;
 }
 
-
-
-
 .changes h2 {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 2.5rem;  
     text-align: left;
 }
-
  
 .image-container4 {
     position: relative;
     
 }
-
-
 
 .column-thirdgen img {
     max-width: 100%;   
@@ -399,12 +358,11 @@ html {
     margin: 0 auto;  
   }
   
-  .overlay-text {
+.overlay-text {
     position: absolute;
     top: 50%; 
     left: 50%;  
     transform: translate(-50%, -50%);  
-   
     color: rgb(255, 255, 255);  
     padding: 10px 20px; 
     border-radius: 5px;  
@@ -412,7 +370,7 @@ html {
     font-size: 2.3vw;
     font-family: "Comic Sans", sans-serif; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
-  }
+}
   
 
  .popup {
@@ -430,14 +388,14 @@ html {
     
 }
 
-
 .popup-content {
-    background-color: #e3e3e3;
+    background-color: #ffffff;
     margin: auto;
     padding: 20px;
     border-radius: 5px;
     max-width: 90%;
     text-align: center;
+    opacity: 93%;
 
 }
 
@@ -449,15 +407,13 @@ html {
 }
 
 .popup-content h2 {
-    font-family: "Roboto", sans-serif; /* Change font family */
-    font-size: 40px; /* Change font size */
-    /* Add any other styling for h2 elements */
+    font-family: "Roboto", sans-serif; 
+    font-size: 40px; 
 }
 
 .popup-content p {
-    font-family: "Open Sans", sans-serif; /* Change font family */
-    font-size: 30px; /* Change font size */
-    /* Add any other styling for p elements */
+    font-family: "Open Sans", sans-serif; 
+    font-size: 30px; 
 }
 
 .close:hover,
@@ -466,18 +422,13 @@ html {
     text-decoration: none;
     cursor: pointer;
 }
-  .column-thirdgen img {
+.column-thirdgen img {
     cursor: pointer;
-  
-    
-  }
+}
 
-  .column-thirdgen img {
+.column-thirdgen img {
     max-width: 100%;   
-    
     transition: opacity 0.3s ease;  
-   
-    
 }
 
 .column-thirdgen img:hover {
