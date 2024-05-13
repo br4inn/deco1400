@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The MR2 - SW20</title>
-    <link rel="stylesheet" href="style.css">  
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>The MR2 - SW20</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> <!-- Defer script execution until after DOMContentLoaded -->
 </head>
 
-<body class="secondgenbackground"> 
-    <header>
-        <nav>  
-            <ul> 
-                <li class="home-link"><a href="index.html"><strong>HOME</strong></a></li>
-                <li><a href="origins.html">ORIGINS</a></li>
-                <li><a href="first_generation.html">1ST GEN</a></li>
-                <li><a href="second_generation.html">2ND GEN</a></li>
-                <li><a href="third_generation.html">3RD GEN</a></li>
-                <li><a href="motorsport.html">MOTORSPORT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main> 
-            <div class="image-container3">
-                <img src="./images/test.jpg" alt="secondgen" class="secondgen">
-               
-            </div>
-            <div class="bodytextsecond">
-                <span class="generation-title">SECOND GENERATION</span>
-                <h2>    
-                    In 1989, the MR2 underwent a significant transformation. 
+<body class="secondgenbackground">
+  <header>
+    <nav>
+      <ul>
+        <li class="home-link"><a href="index.html"><strong>HOME</strong></a></li>
+        <li><a href="origins.html">ORIGINS</a></li>
+        <li><a href="first_generation.html">1ST GEN</a></li>
+        <li><a href="second_generation.html">2ND GEN</a></li>
+        <li><a href="third_generation.html">3RD GEN</a></li>
+        <li><a href="motorsport.html">MOTORSPORT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="article-container">
+      <div class="image-container3">
+        <img src="./images/test.jpg" alt="secondgen" class="secondgen">
+      </div>
+      <div class="bodytextsecond">
+        <span class="generation-title">SECOND GENERATION</span>
+        <h2>
+            In 1989, the MR2 underwent a significant transformation. 
                         The new SW20 iteration boasted a larger, more luxurious cabin, 
                         sacrificing some weight for increased passenger comfort. 
                         This was balanced by upgrades to the engine and drivetrain for 
@@ -41,14 +41,101 @@
                         ultimately stuck with a four-cylinder engine, suggesting a potential V6 
                         might find its home under the Lexus brand. Overall, the 1989 MR2 redesign 
                         offered an evolution, balancing luxury and performance. 
-                </h2>
-            </div>
+        </h2>
+      </div>
+    <!-- Inspiration taken from https://www.sliderrevolution.com/resources/css-timeline/-->
+      <section id="timeline">
+        <div class="tl-item" id="revision1">
+          <div class="tl-bg"></div>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">1989</p>
+          </div>
+          <div class="tl-content">
+            <h1>Revision 1</h1>
+            <p>Content about the first revision</p>
+          </div>
+        </div>
       
-    </main>
-    
+        <div class="tl-item" id="revision2">
+          <div class="tl-bg"></div>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">1991</p>
+          </div>
+          <div class="tl-content">
+            <h1>Revision 2</h1>
+            <p>Content about the second revision</p>
+          </div>
+        </div>
+      
+        <div class="tl-item" id="revision3">
+          <div class="tl-bg"></div>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">1993</p>
+          </div>
+          <div class="tl-content">
+            <h1>Revision 3</h1>
+            <p>Content about the third revision</p>
+          </div>
+        </div>
+      
+        <div class="tl-item" id="revision4">
+          <div class="tl-bg"></div>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">1996</p>
+          </div>
+          <div class="tl-content">
+            <h1>Revision 4</h1>
+            <p>Content about the fourth revision</p>
+          </div>
+        </div>
+      
+        <div class="tl-item" id="revision5">
+          <div class="tl-bg"></div>
+          <div class="tl-year">
+            <p class="f2 heading--sanSerif">1997</p>
+          </div>
+          <div class="tl-content">
+            <h1>Revision 5</h1>
+            <p>Content about the fifth revision</p>
+          </div>
+        </div>
+      </section>
+    </section>
 
-        
-  
-  
+   
+
+    <section class="owner-reviews">
+      <h2>Owner Reviews</h2>
+      <div class="review">
+        <h3>The Thrill of the drive by Paul (QLD)</h3>
+        <p>(Content for review)</p>
+      </div>
+      <div class="review">
+        <h3>Aging Beauty by Louis (CA)</h3>
+        <p>(Content for review)</p>
+      </div>
+      <div class="review">
+        <h3>A legacy lives on by Brian (VIC)</h3>
+        <p>(Content for review)</p>
+      </div>
+    </section>
+    <section class="cta">
+      <h2>Submit Yours!</h2>
+      <p>
+        (Content for CTA)
+      </p>
+    </section>
+
+  </main>
+    <!-- handle popup-->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="hidePopup()">&times;</span>
+          <img class="popup-image" src="" alt="">
+          <h2 class="popup-title"></h2>
+          <p class="popup-description"></p>
+        </div>
+      </div>
+      
 </body>
 </html>

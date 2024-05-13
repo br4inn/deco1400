@@ -238,30 +238,198 @@ html {
     
 }
 
-.bodytextsecond {
-    flex: 1; 
-    margin-left: 380px;  
-}
+ 
  
 .secondgen {
     position: absolute;
     top: 10;
     left: 0;
-    width: 50%;  
-    height: auto;  
+    width: 20%;  
+    height: 50%;
+}
+.article-container {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 .bodytextsecond {
     text-align: center;
     width: 100%;
-    background-image:  url("./images/grey_background.jpg");
+    padding-left: 20%;
+    background-image: url("./images/grey_background.jpg");
+    margin-bottom: 20px; /* Add space between body text and timeline */
 }
 
 .bodytextsecond h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.5;  
+    font-size: 1.5rem; /* Changed to rem for consistency */
     text-align: center;
 }
+
+ 
+/* Define entrance animation */
+@keyframes popupEntrance {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Define exit animation */
+  @keyframes popupExit {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  
+  /* Apply animation to popup */
+  .popup-content {
+    animation: popupEntrance 0.5s forwards; /* Apply entrance animation */
+  }
+  
+  .popup.hidden {
+    animation: popupExit 0.5s forwards; /* Apply exit animation */
+  }
+/* Inspiration taken from https://www.sliderrevolution.com/resources/css-timeline/*/
+body {
+    font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  
+  #timeline {
+    display: flex;
+    background-color: #ff3030;
+    margin-top: 20px; 
+    &:hover {
+      .tl-item {
+        width: 23.3333%;
+      }
+    }
+  }
+  
+  .tl-item {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 25%;
+    height: 100vh;
+    min-height: 600px;
+    color: #fff;
+    overflow: hidden;
+    transition: width 0.5s ease;
+  
+    &:before,
+    &:after {
+      transform: translate3d(0, 0, 0);
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    &:after {
+      background: transparentize(#e0251b, 0.15);
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+  
+    &:before {
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 75%
+      );
+      z-index: 1;
+      opacity: 0;
+      transform: translate3d(0, 0, 0) translateY(50%);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  
+    &:hover {
+      width: 30% !important;
+  
+      &:after {
+        opacity: 0;
+      }
+  
+      &:before {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) translateY(0);
+        transition: opacity 1s ease, transform 1s ease 0.25s;
+      }
+  
+      .tl-content {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.75s ease 0.5s;
+      }
+  
+      .tl-bg {
+        filter: grayscale(0);
+      }
+    }
+  }
+  
+  .tl-content {
+    transform: translate3d(0, 0, 0) translateY(25px);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 1.618em;
+    top: 55%;
+    opacity: 0;
+  
+    h1 {
+      font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+      text-transform: uppercase;
+      color: #1779cf;
+      font-size: 1.44rem;
+      font-weight: normal;
+    }
+  }
+  
+  .tl-year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  
+    p {
+      font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+      font-size: 1.728rem;
+      line-height: 0;
+    }
+  }
+  
+  .tl-bg {
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+  }
 
 .generation-title {
     font-size: 30px; 

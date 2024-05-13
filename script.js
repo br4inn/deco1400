@@ -40,7 +40,7 @@ const autoScroll = setInterval(() => {
     slidesContainer.scrollLeft = 0; // Scroll back to the first image
   }
   updateSlideIndicator(currentSlideIndex);
-}, 7000); // Changed interval to 7000 milliseconds (7 seconds)
+}, 7000);  
  
 
 function showPopup(title, description, image) {
@@ -61,4 +61,37 @@ function hidePopup() {
   const popup = document.getElementById("popup");
   popup.style.display = "none";
 }
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all elements with class .tl-item
+  const timelineItems = document.querySelectorAll('.tl-item');
 
+  // Loop through each timeline item
+  timelineItems.forEach(item => {
+    // Add a click event listener to each item
+    item.addEventListener('click', function() {
+      // Get the ID of the clicked timeline item
+      const itemId = item.id;
+
+      // Call showPopup function with appropriate title and description for each revision
+      switch(itemId) {
+        case 'revision1':
+          showPopup('Revision 1', 'Content about the first revision', './images/21.jpg');
+          break;
+        case 'revision2':
+          showPopup('Revision 2', 'Content about the second revision', './images/21.jpg');
+          break;
+        case 'revision3':
+          showPopup('Revision 3', 'Content about the third revision');
+          break;
+        // Add cases for other revisions as needed
+      }
+    });
+  });
+
+  // Add click event listener to close button of the popup
+  const closeButton = document.querySelector('.close-btn');
+  closeButton.addEventListener('click', function() {
+    // Hide the popup when close button is clicked
+    hidePopup();
+  });
+});
