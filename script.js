@@ -61,11 +61,13 @@ function hidePopup() {
   const popup = document.getElementById("popup");
   popup.style.display = "none";
 }
+
+
 document.addEventListener("DOMContentLoaded", function() {
-  // Get all elements with class .tl-item
+  // Get all elements with class .tl-item (the timeline)
   const timelineItems = document.querySelectorAll('.tl-item');
 
-  // Loop through each timeline item
+  // Loop through each timeline generation/item
   timelineItems.forEach(item => {
     // Add a click event listener to each item
     item.addEventListener('click', function() {
@@ -83,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
         case 'revision3':
           showPopup('Revision 3', 'Content about the third revision');
           break;
-        // Add cases for other revisions as needed
+         
       }
     });
   });
