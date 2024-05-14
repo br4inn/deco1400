@@ -51,7 +51,7 @@ html {
 .mr2_title {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;  
     position: relative; 
     top: 0;
     width: 100%;  
@@ -60,7 +60,7 @@ html {
 .mr2_title h2 {
     font-family: "Roboto", sans-serif;  
     font-size: 10em;  
-    text-align: center; /* Center align text */
+    text-align: center;  
     line-height: 0.95;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
 }
@@ -106,7 +106,6 @@ html {
 
 .aw11 {
     position: relative;
-    
     width: 99%;  
     left: 5%;
     overflow-x: hidden;
@@ -242,29 +241,45 @@ html {
  
 .secondgen {
     position: absolute;
-    top: 10;
+    
     left: 0;
-    width: 20%;  
-    height: 50%;
+    width: 25%;  
+    height: 65%;
+    padding-left: 1%;
+ 
 }
-.article-container {
-    display: flex; /* Enable flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+
+.second-gen-container {
+    display: flex;  
+    
+    align-items: center;  
+}
+
+.generation-title {
+  font-size: 50px; 
+  left: 20%;
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif; 
 }
 
 .bodytextsecond {
-    text-align: center;
-    width: 100%;
-    padding-left: 20%;
-    background-image: url("./images/grey_background.jpg");
-    margin-bottom: 20px; /* Add space between body text and timeline */
+  text-align: center;
+  background-color:  #f5f5f5; 
+  width: 100%; 
+  padding-left: 28%;  
+  padding-right: 4%; 
+  
+  
+  box-sizing: border-box; 
+ 
+  margin-bottom: 20px;  
 }
 
 .bodytextsecond h2 {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem; /* Changed to rem for consistency */
     text-align: center;
+    font-weight: 300;
 }
 
  
@@ -431,10 +446,7 @@ body {
     filter: grayscale(100%);
   }
 
-.generation-title {
-    font-size: 30px; 
-    left: 20%;
-}
+
 
 /* Inspiration taken from Jemima Abu, webdesign.tuts */
 .slider-wrapper {
