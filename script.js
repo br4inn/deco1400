@@ -104,4 +104,72 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
- 
+// Inspiration taken from Joel Olawanle https://www.freecodecamp.org/news/how-to-submit-a-form-with-javascript/
+document.addEventListener('DOMContentLoaded', () => {
+  const openFormButton = document.getElementById('openFormButton');
+  const closeButton = document.querySelector('.form-popup-close');
+  const submitButton = document.getElementById('submitButton');
+
+  openFormButton.addEventListener('click', () => {
+      showFormPopup( '');
+  });
+
+  closeButton.addEventListener('click', function() {
+      hideFormPopup();
+  });
+
+  submitButton.addEventListener('click', function () {
+      // Check if all fields are filled out before submitting
+      const nameInput = document.getElementById('name');
+      const locationInput = document.getElementById('location');
+      const reviewInput = document.getElementById('review');
+      
+      if (nameInput.value.trim() === '' || locationInput.value.trim() === '' || reviewInput.value.trim() === '') {
+          alert('Please fill out all fields.');
+          return; // Don't submit the form if any field is empty
+      }
+      
+      // If all fields are filled out, proceed with form submission
+      alert('Form submitted!');
+  });
+});
+
+
+function showFormPopup(description) {
+  const popup = document.getElementById('formPopup');
+  const overlay = document.getElementById('formOverlay');
+  const popupDescription = document.querySelector('.form-popup-description');
+  
+  popupDescription.textContent = description;
+
+  popup.style.display = 'block';
+  overlay.style.display = 'block';
+}
+
+function hideFormPopup() {
+  const popup = document.getElementById('formPopup');
+  const overlay = document.getElementById('formOverlay');
+  popup.style.display = 'none';
+  overlay.style.display = 'none';
+}
+
+window.addEventListener('click', function(event) {
+  const popup = document.getElementById('formPopup');
+  const overlay = document.getElementById('formOverlay');
+  if (event.target === overlay) {
+      hideFormPopup();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const reviewForm = document.getElementById('reviewForm');
+  const formPopup = document.getElementById('formPopup');
+
+  reviewForm.addEventListener('submit', function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+
+      // Hide the popup
+      formPopup.classList.add('hidden');
+  });
+});

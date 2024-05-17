@@ -63,63 +63,57 @@
     
   </div>
   
-
   <section class="owner-reviews">
     <div class="centre">
       <div class="bodytext3">
         <h1 class="reviews-title">Owner Reviews</h1>
       </div>
-      </div>  
-      <div class="row">
+    </div>  
+    <div class="row">
+   
         <div class="review"> 
-          <div class="centre"></div>
-      <h3>The Thrill of the drive by Paul (QLD)</h3>
-      <p>Owning the MR2 Spyder has been an exhilarating experience from day one. As a car enthusiast, I've always appreciated vehicles that offer a pure driving experience, and the MR2 Spyder delivers that in spades. The mid-engine layout provides exceptional balance and handling, making every drive a joy, whether it's a spirited run through twisty mountain roads or a leisurely cruise along the coastline. Inside, the cabin is straightforward and driver-focused. The seating position is low and sporty, with everything you need within easy reach. While the interior materials might not be luxurious, they are functional and durable, reflecting the car's purpose as a driver's machine rather than a grand tourer.
-
-        Reliability is another strong point of the MR2 Spyder. As with most Toyota vehicles, maintenance is straightforward, and parts are generally affordable and easy to find. This makes it a great choice for those who want a sports car they can drive regularly without worrying about high upkeep costs.</p>
+          <h3>The Thrill of the drive by Paul (QLD)</h3>
+          <p>Owning the MR2 Spyder has been an exhilarating experience from day one. As a car enthusiast, I've always appreciated vehicles that offer a pure driving experience, and the MR2 Spyder delivers that in spades. The mid-engine layout provides exceptional balance and handling, making every drive a joy, whether it's a spirited run through twisty mountain roads or a leisurely cruise along the coastline. Inside, the cabin is straightforward and driver-focused. The seating position is low and sporty, with everything you need within easy reach. While the interior materials might not be luxurious, they are functional and durable, reflecting the car's purpose as a driver's machine rather than a grand tourer.</p>
+        </div>
+        <div class="review"> 
+          <h3>Aging Beauty by Louis (CA)</h3>
+          <p>The MR2 Spyder is an aging beauty that continues to captivate with its timeless design and engaging driving dynamics. Despite being over two decades old, this car still manages to turn heads and bring a smile to my face every time I get behind the wheel. As a proud owner from California, I've come to appreciate the MR2 Spyder's blend of classic sports car elements with Toyota's renowned reliability.</p>
+        </div>
+        <div class="review"> 
+          <h3>A legacy lives on by Brian (VIC)</h3>
+          <p>The Toyota MR2 Spyder is more than just a car; it’s a legacy that continues to live on, captivating driving enthusiasts like myself with its unique blend of performance, style, and heritage. As an owner from Victoria, Australia, I’ve had the pleasure of experiencing firsthand why this car has such a dedicated following.</p>
+        </div>
+      </div>
+      <div class = "centre">
+        <h2>Submit a Review</h2>
+      </div>
+      <div class = "centre">
+      <button class="form-button" id="openFormButton">SUBMIT HERE</button>
+      </div>
+      <div class="form-overlay" id="formOverlay">
+        <div class="form-popup" id="formPopup">
+            <div class="form-popup-header">
+                <h2 class="form-popup-title"></h2>
+                <span class="form-popup-close" onclick="hideFormPopup()">&times;</span>
+            </div>
+            <div class="form-popup-content">
+                <p class="form-popup-description">Description</p>
+                <h1>Write Your Review:</h1>
+                <form id="reviewForm" class="review-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="location">Location:</label>
+                    <input id="location" name="location" required>
+                    <label for="review">Review:</label>
+                    <input id="review" name="review" required>
+                    <button type="submit" class="form-button" id="submitButton">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
-    <div class="review"> 
-      <div class="centre"></div>
-      <h3>Aging Beauty by Louis (CA)</h3>
-      <p>The MR2 Spyder is an aging beauty that continues to captivate with its timeless design and engaging driving dynamics. Despite being over two decades old, this car still manages to turn heads and bring a smile to my face every time I get behind the wheel. As a proud owner from California, I've come to appreciate the MR2 Spyder's blend of classic sports car elements with Toyota's renowned reliability.
-
-        One of the most striking features of the MR2 Spyder is its design. The sleek, low-slung body and mid-engine layout give it a distinctive, purposeful look. The styling has aged gracefully, and even today, it stands out among newer cars. The compact size and lightweight construction make it perfect for navigating California's winding roads and scenic routes.
-        
-        Driving the MR2 Spyder is an absolute joy. The car's handling is sharp and precise, with a level of responsiveness that makes you feel directly connected to the road. The 1.8-liter engine, while modest in power, delivers a spirited performance that is more than adequate for the car's lightweight frame. The five-speed manual transmission adds to the engaging driving experience, allowing for smooth and satisfying gear changes.</p>
-    </div>
-    <div class="review"> 
-      <div class="centre"></div>
-      <h3>A legacy lives on by Brian (VIC)</h3>
-      <p>The Toyota MR2 Spyder is more than just a car; it’s a legacy that continues to live on, captivating driving enthusiasts like myself with its unique blend of performance, style, and heritage. As an owner from Victoria, Australia, I’ve had the pleasure of experiencing firsthand why this car has such a dedicated following.
-
-        One of the first things that struck me about the MR2 Spyder is its timeless design. The sleek, aerodynamic lines and mid-engine configuration give it a distinctive, sporty look that never seems to age. Even amidst a sea of modern vehicles, the MR2 Spyder holds its own, turning heads and sparking conversations wherever I go. The compact, lightweight body not only enhances its visual appeal but also contributes significantly to its driving dynamics.</p>
-    </div>
-    </div>
-    
-  </section>
   
-  <section class="cta">
-    <h2>Submit Yours!</h2>
-    <button id="submitReviewButton">Submit Review</button>
-  </section>
 
-  <div id="reviewFormContainer" style="display: none;">
-    <form id="reviewForm">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="city">City:</label>
-        <input type="text" id="city" name="city" required>
-      </div>
-      <div class="form-group">
-        <label for="review">Review:</label>
-        <textarea id="review" name="review" required></textarea>
-      </div>
-      <button type="submit" class="btn">Submit</button>
-    </form>
-  </div>
+   
 
   <div id="popup" class="popup">
     <div class="popup-content">
@@ -129,20 +123,10 @@
       <p class="popup-description"></p>
     </div>
   </div>
+
 </body>
 </html>
-  <!-- handle popup-->
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close" onclick="hidePopup()">&times;</span>
-      <img class="popup-image" src="" alt="">
-      <h2 class="popup-title"></h2>
-      <p class="popup-description"></p>
-    </div>
-  </div>
-
-
-  
+ 
 
   <script src="script.js"></script>
 </body>
