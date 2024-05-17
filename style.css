@@ -1,7 +1,7 @@
 header {
     background-color: #ffffff;  
     color: #000000;  
-    padding: 5px 0;  
+    padding: 10px 0;  
     z-index: 1;
     position: relative;
 }
@@ -142,12 +142,11 @@ html {
  
 .firstgen {
     top: 50%;
-    width: 100vw;  
+    width: 100%;  
     height: auto;  
     display: block; 
     margin: 0; 
-    padding-left: 1.45%;
-    padding-right: 1.45%;
+   
 }
 
 #first_generation_title {
@@ -168,7 +167,7 @@ html {
 .bodytext {
     text-align: center;
     width: 100%;
-    background-color:#eae6e6ae;
+    background-color:#efeded;
     margin: 0;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -203,6 +202,7 @@ html {
     transition: transform 0.3s ease-in-out;
     font-family: "Trebuchet MS", sans-serif; 
     font-size: 1.4em;  
+    
 }
 
 .column:hover {
@@ -238,55 +238,7 @@ html {
 }
 
  
-.image-container3 {
-    align-self: flex-start; /* Align the image to the start (top) of the container */
-    margin-bottom: auto;  
-}
-
-.secondgen {
-    position: absolute;
-    
-    left: 0;
-    width: 27%;  
-    height: 77.75%;
-    padding-left: 1%;
-
  
-}
-
-.second-gen-container {
-    display: flex;  
-    
-    align-items: center;  
-}
-
-.generation-title {
-  font-size: 50px; 
-  left: 20%;
-  font-weight: bold;
-  font-family: "Trebuchet MS", sans-serif; 
-}
-
-.bodytextsecond {
-  text-align: center;
-  background-color:  #f5f5f5; 
-  width: 100%; 
-  padding-left: 30%;  
-  padding-right: 4%; 
-  
-    flex-grow: 1;
-  box-sizing: border-box; 
- 
-  
-}
-
-.bodytextsecond h2 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem; /* Changed to rem for consistency */
-    text-align: center;
-    font-weight: 300;
-}
-
  
 /* Define entrance animation */
 @keyframes popupEntrance {
@@ -321,185 +273,356 @@ html {
     animation: popupExit 0.5s forwards; /* Apply exit animation */
   }
 
+.bodytext2 {
+    text-align: center;
+    width: 100%;
+
+    margin: 0;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.bodytext2 h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.8;  
+    text-align: center;
+    
+} 
+
+video {
+  width: 100%; /* Adjust width as needed */
+  height: 100%; /* Maintain aspect ratio */
+   
+ 
+  /* Add any other styles you need */
+}
 /* Inspiration taken from https://www.sliderrevolution.com/resources/css-timeline/*/
 body {
-    font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
-  }
-  
-  #timeline {
-    display: flex;
-    background-color: #ff3030;
-    margin-top: 20px; 
-    &:hover {
-      .tl-item {
-        width: 23.3333%;
-      }
-    }
-  }
-  
-  .tl-item {
-    transform: translate3d(0, 0, 0);
-    position: relative;
-    width: 25%;
-    height: 100vh;
-    min-height: 600px;
-    color: #fff;
-    overflow: hidden;
-    transition: width 0.5s ease;
-  
-    &:before,
-    &:after {
-      transform: translate3d(0, 0, 0);
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-    }
+  font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
 
+/* Timeline  Introduction */
+.intro {
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 0;  
+}
+
+.intro .timeline-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-top: 0;
+  padding-top: 1%;
+}
+ 
+ 
+.intro .timeline-description {
+  font-size: 1.2em;
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Image Container */
+.image-container3 {
+  align-self: flex-start;
+ 
+}
+
+/* Second Generation Section */
+.secondgen {
+  position: absolute;
+  left: 0;
+  width: 34.5%;
+  height: 83.75%;
+  padding-left: 0.5%;
+  padding-bottom: 30px;
+}
+
+.second-gen-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 43%;
+ 
+}
+ 
+
+  .secondgen3 {
+    position: absolute;
+    left: 34%;
+    width: 34.5%;
+    height: 83.75%;
     
-  
-    &:after {
-      background: transparentize(#e0251b, 0.15);
-      opacity: 1;
-      transition: opacity 0.5s ease;
-    }
-  
-    &:before {
-      background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 1) 75%
-      );
-      z-index: 1;
-      opacity: 0;
-      transform: translate3d(0, 0, 0) translateY(50%);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-  
-    &:hover {
-      width: 30% !important;
-  
-      &:after {
-        opacity: 0;
-      }
-  
-      &:before {
-        opacity: 1;
-        transform: translate3d(0, 0, 0) translateY(0);
-        transition: opacity 1s ease, transform 1s ease 0.25s;
-      }
-  
-      .tl-content {
-        opacity: 1;
-        transform: translateY(0);
-        transition: all 0.75s ease 0.5s;
-      }
-  
-      .tl-bg {
-        filter: grayscale(0);
-      }
-    }
+    
+    margin-top: 0;
   }
-  .tl-item:nth-child(odd) {
-    background-color: #f5f5f5; /* Light gray background for odd numbered items */
-    color: #000; /* Black text color */
-  }
+
+
+.secondgen2 {
+  position: absolute;
+  left: 67%;
+  width: 32.4%;
+  height: 83.75%;
+ 
+  padding-bottom: 30px;
   
-  .tl-item:nth-child(even) {
-    background-color: #464646; /* Dark gray background for even numbered items */
-    color: #fff; /* White text color */
-  }
+  margin-top: 0;
+}
+ 
+
+
+.generation-title {
+  font-size: 50px;
+  left: 20%;
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.bodytextsecond {
+  text-align: center;
+  background-color: #f5f5f5;
+  width: 100%;
+  padding-left: 10%;
+  padding-right:10%;
+  padding-bottom: 1%;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin-bottom: 1;
+ 
+ 
+  padding-top: 1%;
+}
+
+.bodytextsecond h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.owner-reviews .reviews-title {
+
+  font-size: 40 
+}
+
+.special-editions .title-special {
+ 
+
+  font-size: 40 
+}
+
+.special {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the title horizontally */
   
-  .tl-content {
-    transform: translate3d(0, 0, 0) translateY(25px);
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    margin: 0 1.618em;
-    top: 55%;
+
+  border-top: 1px solid #ff0000;
+  border-bottom: 1px solid red;
+  font-family: "Trebuchet MS", sans-serif;
+ 
+}
+
+.bodytext3 {
+  text-align: center;
+  width: 100%;
+  
+}
+.bodytext3 h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the title horizontally */
+ 
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+
+
+
+/* Define entrance animation */
+@keyframes popupEntrance {
+  from {
     opacity: 0;
-  
-    h1 {
-      font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
-        sans-serif;
-      text-transform: uppercase;
-      color: 7#ffffff;
-      font-size: 1.9rem;
-      font-weight: bold;
-    }
+    transform: scale(0.5);
   }
-  
-  .tl-year {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 1;
-  
-    p {
-      font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
-        sans-serif;
-      font-size: 1.728rem;
-      line-height: 0;
-    }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
+}
 
-  .tl-item:nth-child(even) .tl-year {
-    border-top: 1px solid #fff; /* Set top - colour to white for odd items */
-    border-bottom: 1px solid #fff;  
+/* Define exit animation */
+@keyframes popupExit {
+  from {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  .tl-item:nth-child(odd) .tl-year {
-    border-top: 1px solid #000; /* Set top - colour to black for even items */
-    border-bottom: 1px solid #000;  
+  to {
+    opacity: 0;
+    transform: scale(0.5);
   }
+}
 
-  .tl-bg {
-    transform: translate3d(0, 0, 0);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center center;
-    transition: filter 0.5s ease;
-    filter: grayscale(100%);
-  }
+/* Apply animation to popup */
+.popup-content {
+  animation: popupEntrance 0.5s forwards; /* Apply entrance animation */
+}
 
-  .tl-item:hover {
-    cursor: pointer; /* Change cursor to pointer on hover */
-  }
+.popup.hidden {
+  animation: popupExit 0.5s forwards; /* Apply exit animation */
+}
 
-/* Inspiration taken from Jemima Abu, webdesign.tuts */
+/* Timeline Styles */
+#timeline {
+  display: flex;
+  background-color: #ff3030;
+  margin-top: 20px;
+}
+
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
+
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  background-color: #ff3030; /* Red background */
+  color: #fff; /* White text */
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+
+.tl-item:before,
+.tl-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tl-item:after {
+  background: transparent; /* Transparent background to avoid tinting */
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 1) 100%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tl-item:hover {
+  width: 30% !important;
+}
+
+.tl-item:hover:after {
+  opacity: 0;
+}
+
+.tl-item:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+
+.tl-item:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+
+.tl-item:hover .tl-bg {
+  filter: grayscale(0);
+}
+
+/* Timeline content */
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+
+.tl-content h1 {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+}
+
+.tl-year p {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.728rem;
+  line-height: 0;
+}
+
+.tl-item .tl-year {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.tl-item:hover {
+  cursor: pointer;
+}
+
 .slider-wrapper {
-    margin: 0; 
-    position: relative;
-    overflow: hidden;
-    padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
 }
-  
+
 .slides-container {
-    height: calc(100vh - 2rem);
-    width: 100%;
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; 
-    scroll-behavior: smooth;
+  height: calc(100vh - 2rem);
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
-  
-  .slide {
-    width: 100%;
-    height: 100%;
-    flex: 1 0 100%;
-  }
-  
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
   /* WebKit */
   .slides-container::-webkit-scrollbar { 
     width: 0;
@@ -544,7 +667,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 7px;
+    
 }
 
 .changes h2 {
@@ -592,7 +715,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     z-index: 9999;
     overflow-y: scroll;
-    
+    opacity: 96.5%;
 }
 
 .popup-content {
@@ -602,7 +725,7 @@ body {
     border-radius: 5px;
     max-width: 90%;
     text-align: center;
-    opacity: 93%;
+    opacity: 80%;
 
 }
 
@@ -618,9 +741,20 @@ body {
     font-size: 40px; 
 }
 
+.popup-content h2 {
+  background-color: #ff0000;
+  color: #ffffff;
+
+
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
 .popup-content p {
     font-family: "Open Sans", sans-serif; 
     font-size: 30px; 
+    line-height: 1.45;
 }
 
 .close:hover,
@@ -641,3 +775,26 @@ body {
 .column-thirdgen img:hover {
     opacity: 0.8; 
 }
+
+.review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the title horizontally */
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1.4em;
+}
+
+.review h3 {
+  text-align: center; /* Center the title horizontally */
+}
+
+.review p {
+  text-align: left; /* Align the paragraph to the right */
+}
+ 
