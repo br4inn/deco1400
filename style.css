@@ -81,19 +81,14 @@ html {
     overflow-x: hidden;
 }
 
-
 .image-container img {
     transition: transform 0.3s ease;
     max-width: 100%;
-    
 }
-
 
 .image-container img:hover {
     transform: scale(1.1); /* Scale up the image on hover */
 }
-
- 
 
 .image-container-sw20 img {
     transition: transform 0.3s ease;
@@ -102,7 +97,6 @@ html {
 .image-container-sw20 img:hover {
     transform: scale(1.1); /* Scale up the image on hover */
 }
-
 
 .aw11 {
     position: relative;
@@ -176,8 +170,7 @@ html {
 .bodytext h2 {
     font-size: 1.8;  
     text-align: center;
-    font-family: "Comic Sans", sans-serif; 
-    
+    font-family: "Comic Sans", sans-serif;  
 }
 
 .aw11-title {
@@ -190,7 +183,6 @@ html {
 }
 
 .aw11-paragraph {
-  
     font-size: 1.4em;  
 }
 
@@ -204,8 +196,8 @@ html {
     transition: transform 0.3s ease-in-out;
     font-family: "Trebuchet MS", sans-serif; 
     font-size: 1.4em;  
-    border-radius: 10px; 
-    
+    border-radius: 10px;  
+    cursor: pointer;
 }
 
 .column:hover {
@@ -228,8 +220,6 @@ html {
     border: none;
     border-radius: 10px; 
     font-weight: 700;
-  
- 
 }
  
 .image-container4 {
@@ -244,50 +234,12 @@ html {
     max-width: 100%;   
     height: auto;  
     display: block;  
-    margin: 0 auto;  
-    
+    margin: 0 auto;    
 }
-
- 
- 
- 
-/* Define entrance animation */
-@keyframes popupEntrance {
-    from {
-      opacity: 0;
-      transform: scale(0.5);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  /* Define exit animation */
-  @keyframes popupExit {
-    from {
-      opacity: 1;
-      transform: scale(1);
-    }
-    to {
-      opacity: 0;
-      transform: scale(0.5);
-    }
-  }
-  
-  /* Apply animation to popup */
-  .popup-content {
-    animation: popupEntrance 0.5s forwards; /* Apply entrance animation */
-  }
-  
-  .popup.hidden {
-    animation: popupExit 0.5s forwards; /* Apply exit animation */
-  }
 
 .bodytext2 {
     text-align: center;
     width: 100%;
-
     margin: 0;
     padding-left: 0.5%;
     padding-right: 0.5%;
@@ -297,7 +249,6 @@ html {
     font-family: "Open Sans", sans-serif;
     font-size: 1.8;  
     text-align: center;
-    
 } 
 
 video {
@@ -314,7 +265,7 @@ body {
   line-height: 1.5;
 }
 
-/* Timeline  Introduction */
+/* Timeline intro */
 .intro {
   background-color: #ffffff;
   text-align: center;
@@ -337,14 +288,13 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-
-/* Image Container */
+ 
 .image-container3 {
   align-self: flex-start;
  
 }
 
-/* Second Generation Section */
+/* left image second gen format */
 .secondgen {
   position: absolute;
   left: 0;
@@ -360,91 +310,80 @@ body {
   margin-bottom: 43%;
  
 }
- 
 
-  .secondgen3 {
+/* middle image format */
+.secondgen3 {
     position: absolute;
     left: 34%;
     width: 34.5%;
     height: 83.75%;
-    
-    
     margin-top: 0;
   }
 
-
+/* right image format */
 .secondgen2 {
-  position: absolute;
-  left: 67%;
-  width: 32.4%;
-  height: 83.75%;
- 
-  padding-bottom: 30px;
-  
-  margin-top: 0;
+    position: absolute;
+    left: 67%;
+    width: 32.4%;
+    height: 83.75%;
+    padding-bottom: 30px;
+    margin-top: 0;
 }
- 
-
 
 .generation-title {
-  font-size: 50px;
-  left: 20%;
-  font-weight: bold;
-  font-family: "Trebuchet MS", sans-serif;
+    font-size: 50px;
+    left: 20%;
+    font-weight: bold;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 .bodytextsecond {
-  text-align: center;
-  background-color: #f5f5f5;
-  width: 100%;
-  padding-left: 5%;
-  padding-right:5%;
-  padding-bottom: 1.5%;
-  flex-grow: 1;
-  box-sizing: border-box;
-  margin-bottom: 1;
- 
- 
-  padding-top: 1%;
+    text-align: center;
+    background-color: #f5f5f5;
+    width: 100%;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-bottom: 1.5%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin-bottom: 1;
+    padding-top: 1%;
 }
 
 .bodytextsecond h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.3rem;
-  text-align: center;
-  font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 300;
 }
 
 .owner-reviews .reviews-title {
-
-  font-size: 2.7rem;  
-  text-align: left; 
-  color: rgb(255, 255, 255);
-  padding: 8px 580px;
-  border: none;
-  background-color: rgb(255, 0, 0);
-  border-radius: 10px; 
-  font-weight: 600;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);  
-  
+    font-size: 2.7rem;  
+    text-align: left; 
+    color: rgb(255, 255, 255);
+    padding: 8px 580px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px; 
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);  
 }
 
 .special-editions .title-special {
-  font-size: 40 
+   font-size: 40 
 }
 
 .special {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; /* Center the title horizontally */
-  
-  font-weight: 900;
-  border-top: 1px solid #ff0000;
-  border-bottom: 1px solid red;
-  border-width: 2;
-  font-family: "Trebuchet MS", sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    font-weight: 900;
+    border-top: 1px solid #ff0000;
+    border-bottom: 1px solid red;
+    border-width: 2;
+    font-family: "Trebuchet MS", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
 }
 
 .bodytext3 {
@@ -456,16 +395,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center the title horizontally */
- 
-  
+  align-items: center; 
   font-family: "Trebuchet MS", sans-serif;
 }
 
-
-
-
-/* Define entrance animation */
+/* entrance animation */
 @keyframes popupEntrance {
   from {
     opacity: 0;
@@ -477,7 +411,7 @@ body {
   }
 }
 
-/* Define exit animation */
+/* exit animation */
 @keyframes popupExit {
   from {
     opacity: 1;
@@ -491,11 +425,11 @@ body {
 
 /* Apply animation to popup */
 .popup-content {
-  animation: popupEntrance 0.5s forwards; /* Apply entrance animation */
+  animation: popupEntrance 0.5s forwards; /* entrance animation */
 }
 
 .popup.hidden {
-  animation: popupExit 0.5s forwards; /* Apply exit animation */
+  animation: popupExit 0.5s forwards; /* exit animation */
 }
 
 /* Timeline Styles */
@@ -643,18 +577,18 @@ body {
   height: 100%;
   flex: 1 0 100%;
 }
-  /* WebKit */
-  .slides-container::-webkit-scrollbar { 
+/* WebKit */
+.slides-container::-webkit-scrollbar { 
     width: 0;
     height: 0;
     padding: 0;
-  }
+}
   
-  .slide img {
+.slide img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensures the image covers the entire container */
-    object-position: center top; /* Adjusts the positioning to crop more from the top */
+    object-fit: cover; /* Ensures image covers the entire container */
+    object-position: center top; /*  crop more from the top */
 }
 
 .slide-indicators {
@@ -665,14 +599,14 @@ body {
     display: flex;
   }
   
-  .slide-indicator {
+.slide-indicator {
     width: 10px;
     height: 10px;
     background-color: #fffefe; /* Default color of the indicators */
     margin: 0 5px; /* The spacing between indicators */
     border-radius: 50%;
     z-index: 1;
-  }
+}
   
   .active-slide {
     background-color: #4d4c4c; /* Color of the active indicator */
@@ -681,14 +615,12 @@ body {
 .column-thirdgen {
     position: relative;
     flex: 33%;
- 
 }
   
 .row-thirdgen {
     display: flex;
     margin: 0;
     padding: 0;
-    
 }
 
 .changes h2 {
@@ -699,15 +631,13 @@ body {
  
 .image-container4 {
     position: relative;
-    
 }
 
 .column-thirdgen img {
     max-width: 100%;   
     height: auto;  
     display: block;  
-    margin: 0 auto;  
-    
+    margin: 0 auto;   
   }
   
 .overlay-text {
@@ -723,7 +653,6 @@ body {
     font-family: "Comic Sans", sans-serif; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 6);  
 }
-  
 
  .popup {
     display: none;
@@ -810,65 +739,65 @@ body {
 }
 
 .review h3 {
-text-align: center;  
-margin-top: 0;
-color: rgb(255, 255, 255);
-padding: 8px 1px;
-border: none;
-background-color: rgb(0, 0, 0);
-border-radius: 5px; 
-font-weight: 549; 
+    text-align: center;  
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    padding: 8px 1px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px; 
+    font-weight: 549; 
 }
 
 .review p {
-  text-align: center;
-  font-family: "Comic sans", sans-serif; 
-  line-height: 1.6;
+    text-align: center;
+    font-family: "Comic sans", sans-serif; 
+    line-height: 1.6;
 }
 
 /*Inspiration taken from geeks for geeks */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
 
 .form-button {
-  background-color: red;
-  color: white;
-  padding: 15px 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 20px;
-  transition: background-color 0.3s;
-  margin-bottom: 4%;
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    margin-bottom: 4%;
 }
 .form-button:hover {
-  background-color: rgb(236, 67, 67);
+    background-color: rgb(236, 67, 67);
 }
 
  
 
 .form-popup {
-  color: white;
-  display: none;
-  position: fixed;
-  top: 25%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 600px;
-  background: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  z-index: 1000;
-  animation: formPopupEntrance 0.5s forwards;
-  background: rgba(61, 60, 60, 0.605);
+    color: white;
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    animation: formPopupEntrance 0.5s forwards;
+   background: rgba(61, 60, 60, 0.605);
 }
 .form-popup.hidden {
-  display: none; /* Hide the popup */
+    display: none; /* Hide the popup */
 }
 
 @keyframes formPopupEntrance {
@@ -881,9 +810,11 @@ body {
       transform: scale(1);
   }
 }
+
 .form-popup.hidden {
   animation: formPopupExit 0.5s forwards;
 }
+
 @keyframes formPopupExit {
   from {
       opacity: 1;
@@ -894,29 +825,37 @@ body {
       transform: scale(0.5);
   }
 }
+
 .form-popup-content {
   padding: 20px;
 
-}   .form-popup-header {
+}   
+
+.form-popup-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .form-popup-title {
   margin: 0;
   justify-content: center;
   align-items: center;
 }
+
 .form-popup-close {
   cursor: pointer;
 }
+
 .review-form {
   display: flex;
   flex-direction: column;
 }
+
 .review-form label {
   margin-bottom: 5px;
 }
+
 .review-form input {
   margin-bottom: 15px;
   padding: 10px;

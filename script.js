@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   submitButton.addEventListener('click', function () {
-      // Check if all fields are filled out before submitting
+      // Check if all fields are filled out before submitting otherwise give error message
       const nameInput = document.getElementById('name');
       const locationInput = document.getElementById('location');
       const reviewInput = document.getElementById('review');
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
           return; // Don't submit the form if any field is empty
       }
       
-      // If all fields are filled out, proceed with form submission
+      // If all fields are filled out, user can proceed with form submission
       alert('Form submitted!');
   });
 });
