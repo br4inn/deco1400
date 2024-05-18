@@ -174,21 +174,23 @@ html {
 }
 
 .bodytext h2 {
-    font-family: "Open Sans", sans-serif;
     font-size: 1.8;  
     text-align: center;
+    font-family: "Comic Sans", sans-serif; 
     
 }
 
 .aw11-title {
+    padding-top: 1%;
     font-size: 3em;  
     margin: 0;
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
+   
+    font-family: "Trebuchet MS", sans-serif; 
+    text-align: center; 
 }
 
 .aw11-paragraph {
-    font-family: "Trebuchet MS", sans-serif; 
+  
     font-size: 1.4em;  
 }
 
@@ -202,6 +204,7 @@ html {
     transition: transform 0.3s ease-in-out;
     font-family: "Trebuchet MS", sans-serif; 
     font-size: 1.4em;  
+    border-radius: 10px; 
     
 }
 
@@ -219,6 +222,14 @@ html {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 2.5rem;  
     text-align: left;
+    background-color: rgba(255, 0, 0, 0.855);
+    color: white;
+    padding: 13px 611px;
+    border: none;
+    border-radius: 10px; 
+    font-weight: 700;
+  
+ 
 }
  
 .image-container4 {
@@ -406,12 +417,19 @@ body {
 
 .owner-reviews .reviews-title {
 
-  font-size: 40 
+  font-size: 2.7rem;  
+  text-align: left; 
+  color: rgb(255, 255, 255);
+  padding: 8px 615px;
+  border: none;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px; 
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);  
+  
 }
 
 .special-editions .title-special {
- 
-
   font-size: 40 
 }
 
@@ -421,11 +439,12 @@ body {
   justify-content: center;
   align-items: center; /* Center the title horizontally */
   
-
+  font-weight: 900;
   border-top: 1px solid #ff0000;
   border-bottom: 1px solid red;
+  border-width: 2;
   font-family: "Trebuchet MS", sans-serif;
- 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
 }
 
 .bodytext3 {
@@ -700,9 +719,9 @@ body {
     padding: 10px 20px; 
     border-radius: 5px;  
     font-weight: bold;  
-    font-size: 2.3vw;
+    font-size: 2.9vw;
     font-family: "Comic Sans", sans-serif; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 6);  
 }
   
 
@@ -780,25 +799,31 @@ body {
 }
 
 .review {
+  border-radius: 10px; 
   flex: 1;
   padding: 20px;
   margin: 10px;
-  background-color:  #f5f5f5;
+  background-color:  #ffffff;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- 
-  font-family: "Open sans", sans-serif; 
-  font-size: 1.4em;  
+  font-size: 1.5em;  
 }
 
 .review h3 {
-text-align: center; /* Center the title horizontally */
+text-align: center;  
 margin-top: 0;
-
+color: rgb(255, 255, 255);
+padding: 8px 1px;
+border: none;
+background-color: rgb(0, 0, 0);
+border-radius: 5px; 
+font-weight: 549; 
 }
 
 .review p {
-  text-align: left; /* Align the paragraph to the right */
+  text-align: center;
+  font-family: "Comic sans", sans-serif; 
+  line-height: 1.6;
 }
 
 /*Inspiration taken from geeks for geeks */
@@ -812,12 +837,13 @@ body {
 .form-button {
   background-color: red;
   color: white;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   transition: background-color 0.3s;
+  margin-bottom: 4%;
 }
 .form-button:hover {
   background-color: rgb(236, 67, 67);
