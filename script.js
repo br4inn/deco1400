@@ -31,7 +31,7 @@ slides.forEach((slide, index) => {
 // Update active slide indicator initially
 updateSlideIndicator(currentSlideIndex);
 
-// Automatically scroll to the next slide every 7 seconds
+// Automatically scroll to the next slide every 7 seconds on thirdgen page
 const autoScroll = setInterval(() => {
   slidesContainer.scrollLeft += slides[currentSlideIndex].offsetWidth;
   currentSlideIndex++;
@@ -42,18 +42,17 @@ const autoScroll = setInterval(() => {
   updateSlideIndicator(currentSlideIndex);
 }, 7000);  
  
-
+// Popup function
 function showPopup(title, description, image) {
   const popup = document.getElementById("popup");
   const popupContent = document.querySelector(".popup-content");
-  const popupTitle = popupContent.querySelector(".popup-title");
-  const popupDescription = popupContent.querySelector(".popup-description");
+  const popupTitle = popupContent.querySelector(".popup-title"); //get title
+  const popupDescription = popupContent.querySelector(".popup-description"); // get description
   const popupImage = popupContent.querySelector(".popup-image");
 
   popupTitle.textContent = title;
   popupDescription.textContent = description;
   popupImage.src = image; // Set the image source
-
   popup.style.display = "block";
 }
 
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Get all elements with class .tl-item (the timeline)
   const timelineItems = document.querySelectorAll('.tl-item');
 
-  // Loop through each timeline generation/item
+  // Loop through each timeline revision (5)
   timelineItems.forEach(item => {
     // Add a click event listener to each item
     item.addEventListener('click', function() {
@@ -109,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const openFormButton = document.getElementById('openFormButton');
   const closeButton = document.querySelector('.form-popup-close');
   const submitButton = document.getElementById('submitButton');
-
+  // show form on click
   openFormButton.addEventListener('click', () => {
       showFormPopup( '');
   });
@@ -134,18 +133,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+// Controls showing the popup for the form
 function showFormPopup(description) {
   const popup = document.getElementById('formPopup');
   const overlay = document.getElementById('formOverlay');
   const popupDescription = document.querySelector('.form-popup-description');
-  
+  // set content
   popupDescription.textContent = description;
 
   popup.style.display = 'block';
   overlay.style.display = 'block';
 }
 
+// Controls hiding the popup for the form
 function hideFormPopup() {
   const popup = document.getElementById('formPopup');
   const overlay = document.getElementById('formOverlay');
@@ -168,7 +168,6 @@ document.addEventListener('DOMContentLoaded', function() {
   reviewForm.addEventListener('submit', function(event) {
       // Prevent the default form submission
       event.preventDefault();
-
       // Hide the popup
       formPopup.classList.add('hidden');
   });
