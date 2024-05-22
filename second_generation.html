@@ -20,12 +20,14 @@
   </header>
   
   <main>
-    <video width="640" height="360" autoplay loop muted>
-      <source src="./files/mr2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <section>
+      <video width="640" height="360" autoplay loop muted>
+        <source src="./files/mr2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
-    <div class="bodytextsecond">
+    <article class="bodytextsecond">
       <span class="generation-title">SECOND GENERATION</span>
       <h2>
         In 1989, the MR2 underwent a significant transformation. 
@@ -42,18 +44,18 @@
         might find its home under the Lexus brand. Overall, the 1989 MR2 redesign 
         offered an evolution, balancing luxury and performance. 
       </h2>
-    </div>
+    </article>
     
     <section class="second-gen-container">
-      <div class="image-container3">
+      <figure class="image-container3">
         <img src="./images/test.jpg" alt="secondgen" class="secondgen">
-      </div>
-      <div class="image-container3">
+      </figure>
+      <figure class="image-container3">
         <img src="./images/IMG_1049.jpg" alt="secondgen3" class="secondgen3">
-      </div>
-      <div class="image-container3">
+      </figure>
+      <figure class="image-container3">
         <img src="./images/IMG_1045.jpg" alt="secondgen2" class="secondgen2">
-      </div>
+      </figure>
     </section>
 
     <!-- Inspiration taken from https://www.sliderrevolution.com/resources/css-timeline/-->
@@ -71,20 +73,21 @@
     <section id="timeline">
       <div class="tl-item" id="revision1">
         <div class="tl-bg"></div>
-        <div class="tl-year">
+        <time class="tl-year">
           <p class="f2 heading--sanSerif">1989</p>
-        </div>
+        </time>
         <div class="tl-content">
           <h1>Revision 1</h1>
           <p>(December 1989 to December 1991)</p>
         </div>
       </div>
 
+      
       <div class="tl-item" id="revision2">
         <div class="tl-bg"></div>
-        <div class="tl-year">
+        <time class="tl-year">
           <p class="f2 heading--sanSerif">1991</p>
-        </div>
+        </time>
         <div class="tl-content">
           <h1>Revision 2</h1>
           <p>(December 1991 to November 1993)</p>
@@ -93,9 +96,9 @@
 
       <div class="tl-item" id="revision3">
         <div class="tl-bg"></div>
-        <div class="tl-year">
+        <time class="tl-year">
           <p class="f2 heading--sanSerif">1993</p>
-        </div>
+        </time>
         <div class="tl-content">
           <h1>Revision 3</h1>
           <p>(November 1993 to June 1996)</p>
@@ -104,9 +107,9 @@
 
       <div class="tl-item" id="revision4">
         <div class="tl-bg"></div>
-        <div class="tl-year">
+        <time class="tl-year">
           <p class="f2 heading--sanSerif">1996</p>
-        </div>
+        </time>
         <div class="tl-content">
           <h1>Revision 4</h1>
           <p>(June 1996 to December 1997)</p>
@@ -115,9 +118,9 @@
 
       <div class="tl-item" id="revision5">
         <div class="tl-bg"></div>
-        <div class="tl-year">
+        <time class="tl-year">
           <p class="f2 heading--sanSerif">1997</p>
-        </div>
+        </time>
         <div class="tl-content">
           <h1>Revision 5</h1>
           <p>(December 1997 to August 1999)</p>
@@ -127,13 +130,13 @@
   </main>
 
   <!-- handle popup-->
-  <div id="popup" class="popup">
+  <aside id="popup" class="popup">
     <div class="popup-content">
-      <span class="close" onclick="hidePopup()">&times;</span>
-      <img class="popup-image" src="" alt="">
-      <h2 class="popup-title"></h2>
-      <p class="popup-description"></p>
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <h2 class="popup-title"></h2>
+        <p class="popup-description"></p>
+        <img class="popup-image" src="" alt="">
     </div>
-  </div>
+</aside>
 </body>
 </html>
