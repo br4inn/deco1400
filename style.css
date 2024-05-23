@@ -124,6 +124,7 @@ html {
   
 .white-text {
     color: white;
+    position: relative;
 }
 
 .centre {
@@ -855,4 +856,51 @@ body {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+/* Responsive Styles for phone */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+      text-align: center;
+  }
+
+  .home-link {
+      float: none;
+      display: block;
+      margin: 0 auto 20px;
+  }
+
+  .mr2_title h2 {
+      font-size: 5em;  
+  }
+
+  .image-container img,
+  .image-container-sw20 img {
+      max-width: 90%;  
+  }
+
+
+  .generation-title {
+      left: auto;
+      text-align: center;
+  }
+
+  .bodytext,
+  .bodytext2,
+  .bodytextsecond {
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .column {
+      margin-bottom: 20px;
+      width: 90%;
+  }
 }
